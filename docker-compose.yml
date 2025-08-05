@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: split-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./output:/app/output
+    networks:
+      - split-network
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: split-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - split-network
+
+networks:
+  split-network:
+    driver: bridge

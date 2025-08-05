@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; text-align: center; background-color: #f9fafb; }
+.container { margin-top: 100px; }
+.title { font-size: 2em; color: #333; margin-bottom: 20px; }
+input[type="file"] { padding: 10px; border: 1px solid #ccc; }
+a { color: #007bff; text-decoration: none; }
+a:hover { text-decoration: underline; }
