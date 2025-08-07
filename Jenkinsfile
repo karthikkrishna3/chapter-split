@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/YOUR_USERNAME/chapter-split.git'
+                git branch: 'main', url: 'https://github.com/karthikkrishna3/chapter-split.git'
             }
         }
 
