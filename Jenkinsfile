@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_HUB_USER = 'karthik3366'
-        DOCKER_HUB_PASSWORD = credentials('dckr_pat_h2AChCcAw3f8F7Lfu-Lg8j4HwaA')
+        DOCKERHUB_CREDENTIALS_ID = 'dockerhub-creds'
         IMAGE_NAME = 'chapter-split'
     }
 
